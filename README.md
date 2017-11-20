@@ -17,3 +17,10 @@ docker build -t datlowe/postgres-pgq-tsearch-czech:9.5 .
 docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=datlowe -e POSTGRES_USER=datlowe datlowe/postgres-pgq-tsearch-czech:9.5
 
 ```
+
+## Test it
+
+
+```sql
+SELECT to_tsvector('czech', 'psi a psů a lidi a lidí a ruce a vody a Měla')
+````
