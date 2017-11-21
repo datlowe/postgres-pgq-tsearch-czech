@@ -35,3 +35,7 @@ SELECT to_tsvector('czech', 'psi a psů a lidi a lidí a ruce a vody a Měla')
   alter text search configuration czech
     alter mapping for word, asciiword with czech_spell, simple;
 ```
+
+## See also
+
+https://postgres.cz/wiki/Instalace_PostgreSQL#Instalace_Fulltextu
