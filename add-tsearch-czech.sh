@@ -1,7 +1,9 @@
 #!/bin/bash
 set -e
 
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
+POSTGRES_DB=${POSTGRES_DB:=$POSTGRES_USER}
+
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
   create text search dictionary czech_spell
     (template=ispell, dictfile=czech, afffile=czech, stopwords=czech);
 
