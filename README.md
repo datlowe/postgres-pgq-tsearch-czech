@@ -38,5 +38,5 @@ SELECT to_tsvector('czech', 'psi a psů a lidi a lidí a ruce a vody a Měla')
 
 ## See also
 
-https://postgres.cz/wiki/Instalace_PostgreSQL#Instalace_Fulltextu
-https://github.com/jtjeferreira/docker-pgq
+* https://postgres.cz/wiki/Instalace_PostgreSQL#Instalace_Fulltextu
+* https://github.com/jtjeferreira/docker-pgq
