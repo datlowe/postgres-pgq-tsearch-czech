@@ -5,8 +5,8 @@
 ## Supported tags
 
 * `9.5`
-
-    Based on `jtjeferreira/docker-pgq:9.5`.
+     * Based on `jtjeferreira/docker-pgq:9.5`.
+     * `docker pull dedekj/postgres-pgq-tsearch-czech:9.5`
 
 ## How to
 
