@@ -10,5 +10,6 @@ RUN curl -L http://postgres.cz/data/czech.tar.gz \
   && rm -rf /tmp/fulltext_dicts/ 
 
 ADD czech.stop /usr/share/postgresql/9.5/tsearch_data/
+ADD dict_snowball.so /usr/lib/postgresql/9.5/lib/
 
 ADD add-tsearch-czech.sh docker-entrypoint-initdb.d/
