@@ -1,6 +1,6 @@
 ## About
 
-`jtjeferreira/docker-pgq` docker with Czech full-text search dictionaries pulled from https://postgres.cz/data/czech.tar.gz.
+`jtjeferreira/docker-pgq` docker with Czech full-text search dictionaries pulled from https://postgres.cz/data/czech.tar.gz and Czech snowball stemmer from https://github.com/datlowe/postgres_snowball_czech .
 
 ## Supported tags
 
@@ -45,3 +45,5 @@ SELECT * FROM ts_debug('czech', 'psi a psů a lidi a lidí a ruce a vody a Měla
 * https://hub.docker.com/r/dedekj/postgres-pgq-tsearch-czech/
 * https://postgres.cz/wiki/Instalace_PostgreSQL#Instalace_Fulltextu
 * https://github.com/jtjeferreira/docker-pgq
+* http://snowballstem.org/otherapps/oregan/
+* https://stackoverflow.com/q/42540638/1857897
