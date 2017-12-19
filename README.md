@@ -29,11 +29,15 @@ SELECT to_tsvector('czech', 'psi a psů a lidi a lidí a ruce a vody a Měla')
 
 
 ```sql
-  create text search dictionary czech_spell
+  create text search dictionary czech_ispell
     (template=ispell, dictfile=czech, afffile=czech, stopwords=czech);
+    
+  create text search dictionary czech_snowball
+    (template=snowball, language=czech, stopwords=czech);
+    
   create text search configuration czech (copy=english);
   alter text search configuration czech
-    alter mapping for word, asciiword with czech_spell, simple;
+    alter mapping for word, asciiword with czech_ispell, czech_snowball;
 ```
 
 ## See also
