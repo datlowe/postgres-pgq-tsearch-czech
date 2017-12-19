@@ -25,7 +25,7 @@ docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=datlowe -e POSTGRES
 SELECT to_tsvector('czech', 'psi a psů a lidi a lidí a ruce a vody a Měla')
 ```
 
-## Upgrading from `docker-pgq` image
+## Upgrading from `docker-pgq` image or for any new database
 
 
 ```sql
